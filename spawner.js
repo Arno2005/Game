@@ -1,20 +1,4 @@
-class Spawner {
-    constructor(x , y) {
-
-        this.x = x;
-        this.y = y;
-        this.directions = [
-            [this.x - 1, this.y - 1],
-            [this.x, this.y - 1],
-            [this.x + 1, this.y - 1],
-            [this.x - 1, this.y],
-            [this.x + 1, this.y],
-            [this.x - 1, this.y + 1],
-            [this.x, this.y + 1],
-            [this.x + 1, this.y + 1]
-        ];
-        matrix[this.y][this.x] = 5
-    }
+class Spawner extends LivingCreature{
     spawn(){
        if(predatorArr.length == 0){
            for (let i = 0; i <= 3; i++) {
